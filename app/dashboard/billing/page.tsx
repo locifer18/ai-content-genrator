@@ -210,7 +210,7 @@ const billing = () => {
                     <ul className='mt-6 space-y-3'>
                         <li className='flex items-center'>
                             <Check className='w-5 h-5 text-green-400 mr-3' />
-                            <span>Unlimited words</span>
+                            <span>10,00,000 words</span>
                         </li>
                         <li className='flex items-center'>
                             <Check className='w-5 h-5 text-green-400 mr-3' />
