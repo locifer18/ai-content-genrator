@@ -28,10 +28,10 @@ export default function Home() {
         </p>
         <div className="flex gap-4 justify-center">
           <Link href="/dashboard">
-            <Button size="lg" className="bg-purple-600 hover:bg-purple-700 mx-2 cursor-pointer">
+            <Button size="lg" className="bg-purple-600 hover:bg-purple-700 mx-2 my-1 cursor-pointer">
               Start Creating <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
-            <Button size="lg" className="bg-white text-gray-900 cursor-pointer" variant="outline">
+            <Button size="lg" className="bg-white my-2 text-gray-900 cursor-pointer" variant="outline">
               View Templates
             </Button>
           </Link>
