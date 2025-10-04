@@ -39,7 +39,7 @@ export default function Home() {
       </section>
 
       {/* Features */}
-      <section className="px-6 py-16 max-w-6xl mx-auto">
+      <section className="px-6 py-3 max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">Why Choose Our AI Generator?</h2>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="text-center p-6 bg-white rounded-xl shadow-sm">
