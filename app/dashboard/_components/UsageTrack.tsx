@@ -80,22 +80,22 @@ const UsageTrack = () => {
     }
 
     return (
-        <div className='p-4'>
-            <div className='bg-gradient-to-r from-purple-600 to-blue-600 text-white p-4 rounded-xl shadow-lg'>
-                <h2 className='font-bold text-lg mb-3'>Credits</h2>
-                <div className='bg-white/20 rounded-full h-3 mb-3'>
+        <div className='px-2'>
+            <div className='bg-gradient-to-r from-purple-600 to-blue-600 text-white p-3 rounded-lg shadow-lg'>
+                <h2 className='font-semibold text-sm mb-2'>Credits</h2>
+                <div className='bg-white/20 rounded-full h-2 mb-2'>
                     <div 
-                        className='bg-white rounded-full h-3 transition-all duration-300' 
+                        className='bg-white rounded-full h-2 transition-all duration-300' 
                         style={{ width: `${Math.min((totalUsage/maxWords)*100, 100)}%` }}
                     ></div>
                 </div>
-                <p className='text-sm font-medium'>{totalUsage.toLocaleString()}/{maxWords.toLocaleString()}</p>
+                <p className='text-xs font-medium'>{totalUsage.toLocaleString()}/{maxWords.toLocaleString()}</p>
                 <p className='text-xs opacity-90'>{userSubscription ? 'Pro Plan Active' : 'Credits Used'}</p>
             </div>
             {!userSubscription && (
                 <Button 
                     variant={'outline'} 
-                    className='w-full cursor-pointer mt-3 border-purple-200 text-purple-700 hover:bg-purple-50'
+                    className='w-full cursor-pointer mt-2 text-xs py-2 border-purple-200 text-purple-700 hover:bg-purple-50'
                 >
                     ⚡ Upgrade Plan
                 </Button>

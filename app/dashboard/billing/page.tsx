@@ -160,13 +160,13 @@ const billing = () => {
 
 
     return (
-        <div className='p-5'>
-            <div className='text-center mb-8'>
-                <h1 className='text-3xl font-bold mb-2'>Upgrade Your Plan</h1>
-                <p className='text-gray-600'>Choose the perfect plan for your needs</p>
+        <div className='p-4 md:p-6'>
+            <div className='text-center mb-6 md:mb-8'>
+                <h1 className='text-2xl md:text-3xl font-bold mb-2'>Upgrade Your Plan</h1>
+                <p className='text-gray-600 text-sm md:text-base'>Choose the perfect plan for your needs</p>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto'>
                 {/* Free Plan */}
                 <div className='bg-white border border-gray-200 rounded-xl p-6 shadow-sm'>
                     <div className='text-center'>
@@ -210,7 +210,7 @@ const billing = () => {
                     <ul className='mt-6 space-y-3'>
                         <li className='flex items-center'>
                             <Check className='w-5 h-5 text-green-400 mr-3' />
-                            <span>Unlimited words</span>
+                            <span>10,00,000 words</span>
                         </li>
                         <li className='flex items-center'>
                             <Check className='w-5 h-5 text-green-400 mr-3' />

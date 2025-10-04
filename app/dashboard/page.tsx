@@ -6,9 +6,8 @@ import TemplateListSection from './_components/TemplateListSection'
 const dashboard = () => {
   const [userSearchTerm, setUserSearchTerm] = useState<string>();
   return (
-    <div>
+    <div className='space-y-6'>
         <SearchSection onSearchInput={(value:string)=>setUserSearchTerm(value)} />
-
         <TemplateListSection searchInput={userSearchTerm} />
     </div>
   )

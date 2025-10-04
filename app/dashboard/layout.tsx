@@ -20,12 +20,15 @@ export default function layout({
             <UserSubscriptionContext.Provider value={{ userSubscription, setUserSubscription }}>
                 <UpdateCreditUsageContext.Provider value={{updateCredit, setUpdateCredit}}>
                     <div className='bg-slate-100 h-full'>
-                        <div className='md:w-64 hidden md:block fixed'>
+                        <div className='fixed h-screen z-30'>
                             <SideNav />
                         </div>
-                        <div className='md:ml-64'>
+                        
+                        <div className='md:ml-64 flex flex-col min-h-screen'>
                             <Header />
-                            {children}
+                            <main className='flex-1 p-4 md:p-6'>
+                                {children}
+                            </main>
                         </div>
                     </div>
                 </UpdateCreditUsageContext.Provider>
@@ -33,4 +36,3 @@ export default function layout({
         </TotalUsageContext.Provider>
     )
 }
-
