@@ -21,7 +21,8 @@ export interface HistoryItem {
 const History = () => {
     const { user } = useUser();
     const [history, setHistory] = useState<HistoryItem[]>([]);
-    const [loading, setLoading] = useState(true); 
+    const [loading, setLoading] = useState(true);
+    const [copiedId, setCopiedId] = useState<number | null>(null); 
     useEffect(() => {
         if (user) {
             fetchHistory();
@@ -49,8 +50,10 @@ const History = () => {
         }
     }
 
-    const handleCopy = (text: string) => {
+    const handleCopy = (text: string, id: number) => {
         navigator.clipboard.writeText(text);
+        setCopiedId(id);
+        setTimeout(() => setCopiedId(null), 2000);
     }
 
     return (
@@ -89,9 +92,9 @@ const History = () => {
                                         <Button 
                                             variant="ghost" 
                                             className="text-primary hover:bg-primary/10" 
-                                            onClick={() => handleCopy(item.aiResponse || '')}
+                                            onClick={() => handleCopy(item.aiResponse || '', item.id)}
                                         >
-                                            Copy
+                                            {copiedId === item.id ? 'Copied!' : 'Copy'}
                                         </Button>
                                     </div>
                                 </div>
@@ -126,9 +129,9 @@ const History = () => {
                                     variant="ghost" 
                                     size="sm"
                                     className="w-full mt-3 text-primary hover:bg-primary/10" 
-                                    onClick={() => handleCopy(item.aiResponse || '')}
+                                    onClick={() => handleCopy(item.aiResponse || '', item.id)}
                                 >
-                                    Copy Content
+                                    {copiedId === item.id ? 'Copied!' : 'Copy Content'}
                                 </Button>
                             </div>
                         );
