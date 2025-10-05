@@ -36,7 +36,6 @@ A powerful, modern AI-powered content generation platform built with Next.js, fe
 - **Responsive Design** optimized for all devices
 - **Beautiful Components** built with Radix UI
 - **Smooth Animations** and transitions
-- **Dark/Light Theme Support**
 
 ## 🛠️ Tech Stack
 
@@ -45,7 +44,6 @@ A powerful, modern AI-powered content generation platform built with Next.js, fe
 - **React 19.1.0** - UI library
 - **TypeScript** - Type-safe development
 - **Tailwind CSS 4.0** - Utility-first CSS framework
-- **Radix UI** - Accessible component primitives
 - **Lucide React** - Beautiful icons
 
 ### Backend & Database
@@ -58,7 +56,6 @@ A powerful, modern AI-powered content generation platform built with Next.js, fe
 - **Google Gemini AI** - Advanced language model
 - **Clerk** - Authentication and user management
 - **Razorpay** - Payment processing
-- **Axios** - HTTP client
 
 ## 🚀 Getting Started
 
@@ -145,7 +142,6 @@ ai-content-generator/
 2. **Choose Templates** from 50+ available options
 3. **Generate Content** using AI with custom inputs
 4. **Manage Subscription** and track usage
-5. **Export Content** in various formats
 
 ### For Developers
 1. **Add New Templates** in `app/(data)/Templates.tsx`
@@ -175,7 +171,7 @@ npm run db:studio    # Open Drizzle Studio
 
 ### Subscription Plans
 - **Free Plan**: 10,000 words/month, 50+ templates
-- **Pro Plan**: Unlimited words, all templates, priority support
+- **Pro Plan**: 10,00,000 words, all templates, priority support
 
 ### Dashboard Features
 - Real-time usage tracking
@@ -203,13 +199,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Tailwind CSS](https://tailwindcss.com/) for beautiful styling
 - [Drizzle ORM](https://orm.drizzle.team/) for type-safe database operations
 
-## 📞 Support
-
-For support, email support@aicontentgenerator.com or join our Discord community.
-
----
 
 <div align="center">
-  <p>Made with ❤️ by [Your Name]</p>
+  <p>Made with ❤️ by Ansh Kanda</p>
   <p>⭐ Star this repo if you find it helpful!</p>
 </div>
