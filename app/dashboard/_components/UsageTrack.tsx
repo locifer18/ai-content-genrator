@@ -8,6 +8,7 @@ import { AIOutput, UserSubscription } from '@/utils/schema';
 import { useUser } from '@clerk/nextjs';
 import { eq } from 'drizzle-orm';
 import React, { useContext, useEffect, useState } from 'react'
+import Link from 'next/link';
 
 const UsageTrack = () => {
     const { user } = useUser();
@@ -93,12 +94,14 @@ const UsageTrack = () => {
                 <p className='text-xs opacity-90'>{userSubscription ? 'Pro Plan Active' : 'Credits Used'}</p>
             </div>
             {!userSubscription && (
+            <Link href={'dashboard/billing'}>
                 <Button 
                     variant={'outline'} 
                     className='w-full cursor-pointer mt-2 text-xs py-2 border-purple-200 text-purple-700 hover:bg-purple-50'
                 >
                     ⚡ Upgrade Plan
                 </Button>
+                </Link>
             )}
         </div>
     )
