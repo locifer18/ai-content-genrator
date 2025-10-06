@@ -3,6 +3,7 @@ import { UserSubscriptionContext } from '@/app/(context)/UserSubscriptionContext
 import { UserButton } from '@clerk/nextjs'
 import { Search } from 'lucide-react'
 import React, { useContext } from 'react'
+import Link from 'next/link';
 
 const Header = () => {
   const { userSubscription, setUserSubscription } = useContext(UserSubscriptionContext);
@@ -19,7 +20,9 @@ const Header = () => {
           userSubscription ? (
             <h2 className='bg-primary p-1 rounded-full text-xs text-white px-2'>{'Pro Member'}</h2>
           ) :
+          <Link href={'dashboard/billing'}>
             <h2 className='bg-primary p-1 rounded-full text-xs text-white px-2 '>🔥Join Membership just for ₹100/Month</h2>
+            </Link>
         }
         <div className='flex items-end gap-2 mx-2'>
           <UserButton />
